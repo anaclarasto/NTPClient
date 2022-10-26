@@ -162,8 +162,8 @@ int main( int argc, char* argv[ ] )
   // Print the time we got from the server, accounting for local timezone and conversion from UTC time.
 
   printf( "Time GMT 0:00: %s", ctime( ( const time_t* ) &txTm ) );
-  printf( "Time Brazil: %s", ctime( ( const time_t* ) &txTmBrazil ) );
-  printf( "Time Palo Alto: %s", ctime( ( const time_t* ) &txTmPaloAlto ) );
+  printf( "Time Brazil (GMT -3:00): %s", ctime( ( const time_t* ) &txTmBrazil ) );
+  printf( "Time Palo Alto (GMT -7:00): %s", ctime( ( const time_t* ) &txTmPaloAlto ) );
 
   return 0;
 }
